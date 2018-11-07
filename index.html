@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
 
-         <meta charset="utf-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
         <style>
-            #apresentacao{
+            #apresentacao {
                 margin-top: 5vw;
                 margin-bottom: 5vw;
             }
-            .txt-body{
+
+            .txt-body {
                 text-indent: 0;
             }
-            #banner{
+
+            #banner {
                 width: 50vw;
                 align-self: center;
-                box-shadow: 1px 1px 1px rgba(0,0,0,.34);
+                box-shadow: 1px 1px 1px rgba(0, 0, 0, .34);
                 border-top-right-radius: 20px;
             }
-            td{
+
+            td {
                 margin: 0;
                 width: 25vw;
                 padding: .3vw;
                 border: 1px solid black;
             }
-            table{
+
+            table {
                 text-align: center;
             }
 
             nav > a.navbar-brand {
-                text-shadow: 1px 1px 1px rgba(0,0,0,.34);
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, .34);
             }
 
-            .featurette-divider{
+            .featurette-divider {
                 margin-top: 4em;
                 margin-bottom: 4em;
                 width: 80%;
@@ -46,6 +49,7 @@
                 margin-right: auto;
                 background-color: #00B4CC;
             }
+
             .parallax-window {
                 min-height: 1000px;
                 background: transparent;
@@ -57,264 +61,193 @@
                 background-color: grey;
             }
 
-            .blueTableItem{
+            .blueTableItem {
                 background-color: #00B4CC;
                 color: white;
                 text-transform: uppercase;
             }
 
-            td{
+            td {
                 border: none;
             }
 
-            .borderLeft{
+            .borderLeft {
                 border-right: 5px solid #00B4CC;
             }
 
-            .textBlue{
+            .textBlue {
                 color: #00B4CC;
             }
 
-            .textCian{
+            .textCian {
                 color: #00707F;
             }
 
-            .nav-item:hover{
+            .nav-item:hover {
                 border-bottom: 3px solid #00B4CC;
                 transition: 0.2s;
             }
 
-            .card-title{
-                text-shadow: 1px 1px 1px rgba(0,0,0,.34);
+            .card-title {
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, .34);
             }
         </style>
-
     </head>
-    <body >
 
+    <body>
+
+        <!-- Menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <a class="navbar-brand text-white" href="#" style="font-family: Titillium Web; font-size: 35px"><span class="textCian">2</span><span class="textBlue">º</span><span class="textCian">S</span><span class="textBlue">E</span><span class="textCian">P</span><span class="textBlue">E</span><span class="textCian">T</span><span class="textBlue">I</span></a>
+            <a class="navbar-brand text-white" href="#" style="font-family: Titillium Web; font-size: 35px">
+                <span class="textCian">2</span><span class="textBlue">º </span>
+                <span class="textCian">S</span><span class="textBlue">E</span><span class="textCian">P</span><span class="textBlue">E</span><span class="textCian">T</span><span class="textBlue">I</span>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#local">Local do Evento</a>
+                    <a class="nav-item nav-link" href="#evento">Evento</a>
                     <a class="nav-item nav-link" href="#datas">Datas Importantes</a>
-                    <a class="nav-item nav-link" href="#chamadas">Chamadas de Trabalhos</a>
-                    <a class="nav-item nav-link" href="#submissao">Submissão de Trabalhos</a>
-                    <a class="nav-item nav-link" href="#programa">Programa do Evento</a>
-                    <a class="nav-item nav-link" href="#comissoes">Comissões</a>
-                    <a class="nav-item nav-link" href="#proceedings">Proceedings</a>
+                    <a class="nav-item nav-link" href="#submissoes">Submissões</a>
+                    <a class="nav-item nav-link" href="#programacao">Programação</a>
+                    <a class="nav-item nav-link" href="#trabalhos">Trabalhos Apresentados</a>
+                    <a class="nav-item nav-link" href="#comissoes">Comissão</a>
+                    <a class="nav-item nav-link" href="#local">Local</a>
                 </div>
             </div>
         </nav>
 
+        <!-- Banner -->
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/banner.png"></div>
-          
-        <section style="width: 100%;" class="bg-light">
+
+        <!-- Sobre o SEPETI -->
+        <section style="width: 100%;" class="bg-light" id="evento">
             <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
-                  <h5 class="card-title">Apresentação</h5><br>
-                  <p class="card-text">O 2º Seminario de Pesquisa e Extensão dos Alunos do Curso Técnico em Informática e Informática para Internet do CEFET-MG Campus Divinópolis surge da necessidade de divulgar, para a comunidade interna e, principalmente, para a comundade externa, os trabalhos desenvolvidos pelos referidos alunos. Os alunos dos Cursos Técnicos em Informática e Informática para Internet participam de vários projetos de pesquisa e extensão, sejam como bolsistas ou como voluntários. São de projetos vinculados ao CEFET-MG e também a outras instituições de ensino como UFSJ e UEMG. Estes trabalhos têm gerado frutos como publicações em congressos, periódicos e registros de softwares. No entanto, estes projetos são, em sua maioria, desconhecidos para a comunidade interna do CEFET e também para a comunidade externa. Nesse contexto, este Seminário visa divulgar os trabalhos dos alunos dos Cursos Técnico em Informática e Informática para Internet para a comunidade interna e externa. Com isso busca-se dar maior visibilidade aos trabalhos desenvolvidos, possibilitar o estabelecimento de parcerias para novos trabalhos com a comunidade interna e, também, com a comunidade externa (empresas) e estimular a participação de novos alunos em futuros projetos.</p>
+                <h5 class="card-title">Sobre o SEPETI</h5><br>
+                <p class="card-text">O Seminario de Pesquisa e Extensão dos Alunos do Curso Técnico em Informática e Informática
+                    para Internet (SEPETI) do CEFET-MG Campus Divinópolis surge da necessidade de divulgar, para a comunidade interna e,
+                    também, para a comundade externa, os trabalhos desenvolvidos pelos referidos alunos. Os alunos dos Cursos
+                    Técnicos em Informática e Informática para Internet participam de vários projetos de pesquisa e extensão,
+                    sejam como bolsistas ou como voluntários. São de projetos vinculados ao CEFET-MG e também a outras
+                    instituições de ensino como UFSJ e UEMG. Estes trabalhos têm gerado frutos como publicações em congressos,
+                    periódicos e registros de softwares. No entanto, estes projetos são, em sua maioria, desconhecidos para as
+                    comunidades interna e externa ao CEFET-MG. Nesse contexto, SEPETI visa divulgar os trabalhos dos alunos dos
+                    Cursos Técnico em Informática e Informática para Internet para as comunidades interna e externa. Com isso
+                    busca-se dar maior visibilidade aos trabalhos desenvolvidos, possibilitar o estabelecimento de parcerias
+                    para novos trabalhos com a comunidade interna e, também, com a comunidade externa (empresas) e estimular a
+                    participação de novos alunos em futuros projetos.<br><br><br>
+                </p>
+                <p class="text-center"><img src="img/chamadaSite.jpg" id="banner"></p>
             </div>
         </section>
 
-      <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
-      <section id="local">
-          <div class="card container mt-5 bg-light">
-                <div class="card-body">
-                    <h5 class="card-title">Local do Evento</h5>
-                    <p class="card-text center">
-                        <div id="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.0746118302363!2d-44.91234534897427!3d-20.17261868640185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa0a437069d42b1%3A0x1a8f8a6323c854ff!2sCentro+Federal+de+Educa%C3%A7%C3%A3o+Tecnol%C3%B3gica+de+Minas+Gerais+-+Campus+Divin%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1501689173728" width="600" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
-                        </div><br><br><br>         
-                        O evento será realizado no CEFET-MG Campus Divinópolis <br>
-                        Rua Álvares de Azevedo 400 - Bela Vista - Divinópolis - MG - Brasil - CEP 35503-822<br>
-                        Telefone: +55 (37) 3229-1150 - +55 (37) 3229-1180<br><br>
-
-                </div>
-          </div>
-      </section>
-
-      <hr class="featurette-divider">
-
-
-      <section style="width: 100%;" class="bg-light" id="datas">
-          <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
+        <!-- Datas Importantes -->
+        <section style="width: 100%;" class="bg-white" id="datas">
+            <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
                 <h5 class="card-title">Datas Importantes</h5><br>
                 <p class="card-text">
-                    - 29/10 - Limite para a submissão dos resumos<br>
-                    - 05/11 - Revisão dos artigos<br>
-                    - 12/11 - Submissão da versão final<br>
-                    - <b>20/11 - 2º SEPETI</b><br></p>
-          </div>
-      </section>
-
-      <hr class="featurette-divider">
-
-      <div class="card container mt-5 bg-light" id="chamadas">
-            <div class="card-body">
-                <h5 class="card-title">Chamadas de trabalhos</h5>
-                <p class="card-text"><img src="img/chamadaSite.jpg" id="banner"></p>
-            </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <section style="width: 100%;" class="bg-light" id="submissao">
-          <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
-                <h5 class="card-title">Informações importantes sobre a submissão dos trabalhos</h5>
-                <p class="card-text">
-                    - Os trabalhos deverão ser submetidos eletronicamente, através do formulário disponível <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZVETrExdRDia_unNtfEbbmoLDwh7wkXllV83JiE7uur7Tzg/viewform"> aqui </a><br>
-                    - Os trabalhos devem ser escritos utilizando o template disponibilizado abaixo e são limitados a 2 (duas) páginas, incluindo resumo, palavras-chave, figuras, tabelas e referencias<br>
-                    - Todas as submissões serão analisadas pela Comissão Científica.<br>
-                    - A submissão e notificação de aceite seguirão o calendário em  Datas importantes.<br>
-                    - Faça download do template em formato DOC <a href="template.doc">aqui!</a><br>
-                    - Faça download do template em formato ODT <a href="template.odt">aqui!</a><br><br>
-                <h5 class="card-title">Em breve</h5>
-                <p class="card-text">Em breve teremos mais informações sobre o programa do evento.</p>
-            </div>
-      </section>
-
-      <hr class="featurette-divider">
-       <div class="card container mt-5" id="comissoes">
-            <div class="card-body">
-                <h5 class="card-title">Em Breve!</h5>
-                <p class="card-text">
-                    Em breve relação.
-           </div>
-        </div>
-
-      <div class="card container mt-5" id="comissoes2" style="display:none">
-            <div class="card-body">
-                <h5 class="card-title">Comissões</h5>
-                <p class="card-text">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <td class="blueTableItem">
-                                    André Maravilha
-                                </td>
-                                <td class="text-secondary borderLeft"> 
-                                    Coordenador
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="blueTableItem">
-                                    Breno Martins da Costa
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Subcoordenador
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="blueTableItem">
-                                    Rodrigo Lambari
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Comissão Organizadora
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="blueTableItem">
-                                    André Rabelo
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Comissão Organizadora
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="blueTableItem">
-                                    Nanci Faria da Silva
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Comissão Organizadora
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="blueTableItem">
-                                    Geyzer Stembark Kirk Rodrigues
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Apoio Técnico
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="blueTableItem">
-                                    Alberto Pena Lara
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Comite do Programa/Revisores
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="blueTableItem">
-                                    Marcelo Caramuru Pimentel Fraga
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Comite do Programa/Revisores
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="blueTableItem">
-                                    Luis Augusto Mattos Mendes
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Comite do Programa/Revisores
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="blueTableItem">
-                                    Hewerton Luis Pereira Santiago
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Comite do Programa/Revisores
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="blueTableItem">
-                                    Rodrigo Reis Pereira
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Comite do Programa/Revisores
-                                </td>
-                            </tr>                    
-                            <tr>
-                                <td class="blueTableItem">
-                                    Guilherme Ribeiro Fonseca
-                                </td>
-                                <td class="text-secondary borderLeft">
-                                    Monitor
-                                </td>
-                            </tr>
-                        </thead>
-                    </table>
+                    - 29/10/2018 - Limite para a submissão de trabalhos<br>
+                    - 05/11/2018 - Envio das decisões/revisões<br>
+                    - 12/11/2018 - Limite para submissão da versão corrigida dos trabalhos aceitos<br>
+                    - <b>20/11/2018 - Realização do 2º SEPETI</b><br>
                 </p>
             </div>
-      </div>
+        </section>
 
-      <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
-      <section style="width: 100%;" class="bg-light" id="proceedings">
-          <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
-                <h5 class="card-title">Em Breve</h5>
+        <!-- Submissões -->
+        <section style="width: 100%;" class="bg-white" id="submissoes">
+            <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
+                <h5 class="card-title">Submissão de Trabalhos</h5>
                 <p class="card-text">
-                    Em breve teremos mais informações sobre proceedings.
+                    - Os trabalhos deverão ser submetidos eletronicamente, através do formulário disponível
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZVETrExdRDia_unNtfEbbmoLDwh7wkXllV83JiE7uur7Tzg/viewform">aqui</a>.<br>
+                    - Os trabalhos devem ser escritos utilizando o template do evento. Faça download do template em formato <a href="template.doc">DOC</a>  ou <a href="template.odt">ODT</a><br>
+                    - Os trabalhos não devem ultrapassar 2 (duas) páginas, incluindo resumo, palavras-chave, figuras, tabelas e referências.<br>
+                    - Os trabalhos devem ser submetidos no formato PDF.
+                    - Todas os trabalhos submetidos serão analisadas por uma comissão de revisão.<br>
+                    - A submissão e notificação de aceite seguirão o calendário em <a href="#datas">Datas Importantes</a>.<br>
             </div>
-      </section>
- 
-      <hr class="featurette-divider">
+        </section>
 
-      <footer class="container">
-          <p class="float-right"><a href="#">Voltar para o topo</a></p>
-          <p>&copy; 2018, <a target="_blank" href="http://www.divinopolis.cefetmg.br/">CEFET-MG CAMPUS V</a>  &middot; Developer: <a href="mailto:gui2710@hotmail.com">Guilherme Ribeiro Fonseca</a></p><br>
-      </footer>
+        <hr class="featurette-divider">
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <script src="js/parallax.min.js"></script>
-      <script src="js/util.js" crossorigin="anonymous"></script>
-  </body>
+        <!-- Programação -->
+        <section style="width: 100%;" class="bg-white" id="programacao">
+            <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
+                <h5 class="card-title">Programação do Evento</h5>
+                <p class="card-text">
+                    Em breve!<br>
+            </div>
+        </section>
+
+        <hr class="featurette-divider">
+
+        <!-- Trabalhos Apresentados -->
+        <section style="width: 100%;" class="bg-white" id="trabalhos">
+            <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
+                <h5 class="card-title">Trabalhos Apresentados</h5>
+                <p class="card-text">
+                    Em breve!<br>
+            </div>
+        </section>
+
+        <hr class="featurette-divider">
+
+        <!-- Comissões -->
+        <section style="width: 100%;" class="bg-white" id="comissoes">
+            <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
+                <h5 class="card-title">Comissão Organizadora</h5>
+                <p class="card-text">
+                    André L. Maravilha<br>
+                    Breno Martins da Costa<br>
+                    Rodrigo Lambari<br>
+                    André Rabelo<br>
+                </table>
+            </div>
+        </section>
+
+        <hr class="featurette-divider">
+
+        <!-- Local do Evento -->
+        <section style="width: 100%;" class="bg-white" id="local">
+            <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
+                <h5 class="card-title">Local do Evento</h5>
+                <p class="card-text center">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.0746118302363!2d-44.91234534897427!3d-20.17261868640185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa0a437069d42b1%3A0x1a8f8a6323c854ff!2sCentro+Federal+de+Educa%C3%A7%C3%A3o+Tecnol%C3%B3gica+de+Minas+Gerais+-+Campus+Divin%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1501689173728"
+                            width="600" height="450" frameborder="0" style="border:0; width: 100%;"
+                            allowfullscreen></iframe>
+                </div>
+                <br><br><br>
+                Centro Federal de Educação Tecnológica (CEFET-MG), Campus Divinópolis<br>
+                Rua Álvares de Azevedo 400 - Bela Vista - Divinópolis/MG - Brasil - CEP 35503-822<br>
+                Telefone: +55 (37) 3229-1150 - +55 (37) 3229-1180<br><br>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer style="width: 100%;" class="bg-light">
+            <div style="width: 60%; margin-left: auto; margin-right: auto; padding-top: 3em; padding-bottom: 3em; text-align: justify;">
+                <p class="float-right"><a href="#">Voltar para o topo</a></p>
+                <p>
+                    &copy; 2018 - <a target="_blank" href="http://www.divinopolis.cefetmg.br/">CEFET-MG, Campus Divinópolis</a><br>
+                    Desenvolvido por <a href="mailto:gui2710@hotmail.com">Guilherme Ribeiro Fonseca</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="js/util.js" crossorigin="anonymous"></script>
+
+    </body>
+
 </html>
